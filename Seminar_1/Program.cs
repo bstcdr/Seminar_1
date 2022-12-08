@@ -1,2 +1,10 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿// Напишите программу, которая на вход принимает число
+// и выдает ее квадрат
+// Например 4 -> 16, 6 -> 36.
+
+int number = int.Parse(Console.ReadLine());
+
+int result = number * number;
+
+Console.WriteLine("Квадрат введенного числа - ");
+Console.Write(result);
