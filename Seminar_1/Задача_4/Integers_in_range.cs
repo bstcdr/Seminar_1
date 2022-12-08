@@ -5,6 +5,6 @@ int N2 = -N;
 
 while (N2 <= N) 
 {
-    Console.WriteLine(N2);
+    Console.Write(N2 + ", ");
     N2++;
 }
