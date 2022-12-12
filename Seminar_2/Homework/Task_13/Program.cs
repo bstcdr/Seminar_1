@@ -7,8 +7,6 @@
 Console.Write("Введите число: ");
 int num = int.Parse(Console.ReadLine());
 
-int index = 1;
-int stepen = 10;
 if (num > 99) {
  while (num > 999)
  {
