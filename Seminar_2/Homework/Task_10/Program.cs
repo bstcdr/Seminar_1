@@ -7,5 +7,12 @@
 Console.Write("Введите трехзначное число: ");
 int num = int.Parse(Console.ReadLine());
 
-int bur = num / 10 % 10;
-Console.WriteLine("-> " + bur);
+if (num > 999 || num < 99)
+{
+    Console.WriteLine("Введено не трехзначное число");
+}
+else
+{
+    int bur = num / 10 % 10;
+    Console.WriteLine("-> " + bur);
+}
