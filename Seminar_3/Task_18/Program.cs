@@ -1,26 +1,29 @@
 ﻿
 Console.Write("Введите номер четверти: ");
 int quarterNumber = int.Parse(Console.ReadLine());
-if (quarterNumber > 0 & quarterNumber < 5)
+string result = GetDiapazon(quarterNumber);
+Console.WriteLine(result);
+
+string GetDiapazon (int numberOfQuarter)
 {
-    if (quarterNumber == 1)
+    if (numberOfQuarter == 1)
     {
-        Console.WriteLine("x > 0 и y > 0");
+        return "x > 0 и y > 0";
     }
-    if (quarterNumber == 2)
+    if (numberOfQuarter == 2)
     {
-        Console.WriteLine("x < 0 и y > 0");
+        return "x < 0 и y > 0";
     }
-    if (quarterNumber == 3)
+    if (numberOfQuarter == 3)
     {
-        Console.WriteLine("x < 0 и y < 0");
+        return "x < 0 и y < 0";
     }
-    if (quarterNumber == 4)
+    if (numberOfQuarter == 4)
     {
-        Console.WriteLine("x > 0 и y < 0");
+        return "x > 0 и y < 0";
     }
-}
-else
-{
-    Console.WriteLine("Просьба указать номер четверти (1, 2, 3, 4)");
+    else 
+    {
+        return "1, 2, 3, 4 только";
+    }
 }
