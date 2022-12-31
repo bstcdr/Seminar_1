@@ -6,9 +6,33 @@
 
 Console.Write("Введите число: ");
 int number = int.Parse(Console.ReadLine());
+int[] arr = GetCalculateTheSquare(number);
+PrintArray(arr);
 
-for (int stepen = 1; stepen <= number; stepen++)
+int[] GetCalculateTheSquare(int N)
 {
-    int result = Math.Pow(stepen, 2);
-    Console.WriteLine(result);
+    int[] array = new int[N];
+
+    for (int i = 0; i < N; i++)
+    {
+        array[i] = (i + 1) * (i + 1);
+    }
+    return array;
 }
+
+void PrintArray(int[] array)
+{
+    for (int i = 0; i < array.Length; i++)
+    {
+        Console.Write(array[i] + ", ");
+    }
+}
+
+
+
+
+
+
+
+
+
